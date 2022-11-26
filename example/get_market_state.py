@@ -1,7 +1,10 @@
+## 获取指定标的的市场状态
+
+
 from futu import *
 quote_ctx = OpenQuoteContext(host='127.0.0.1', port=11111)
 
-ret, data = quote_ctx.get_market_state(['SZ.000001', 'HK.00700'])
+ret, data = quote_ctx.get_market_state(['SZ.000001', 'HK.00700', 'US.TSM'])
 if ret == RET_OK:
     print(data)
 else:
